@@ -1,0 +1,15 @@
+{
+  "name": "leeway-slack",
+  "author": "Kenta YACHIDA",
+  "description": "chrome extension for customize Slack.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "web_accessible_resources": ["docs/*"],
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.slack.com/*"],
+      "css": ["docs/style.css"]
+    }
+  ]
+}
